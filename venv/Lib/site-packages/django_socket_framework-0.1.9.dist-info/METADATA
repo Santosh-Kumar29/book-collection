@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: django-socket-framework
+Version: 0.1.9
+Summary: Socket consumer environment with more systematic methods/events and auth
+Author: Lia Va
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=3.1.0)
+Requires-Dist: djangorestframework-simplejwt (>=4.4.0)
+Requires-Dist: channels (>=3.0.3)
+Requires-Dist: channels-redis (>=3.2.0)
+
+# django-socket-framework
+Socket consumer environment with separated methods/events and token authentication.
+
+## Installation
+```console
+pip install -i https://test.pypi.org/simple/ django-socket-framework
+```
+
+## Usage
+
+#### Basic channels setup:
+*show channels setting up*
+
+#### Then we can create our consumer:
+```python
+*imports*
+
+class ChatConsumer(JWTAuthConsumer):
+....
+```
+
+*then some test*
+
+

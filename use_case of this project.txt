@@ -1,0 +1,33 @@
+
+Dear team,
+
+This project was created using Django Admin and implemented all APIs using FastAPI.
+
+To use this project, run the server on your local machine using the following command: uvicorn main:app --reload in the folder (course_api) .
+
+Please find the details of the URLs on this specific page below:
+
+
+1. 	To retrieve a list of all available courses, information on how to enroll or sign up, or to use a search bar to find specific courses, 
+	please use this URL :-
+
+	http://localhost:8000/courses/
+	
+2. 	To display a list of courses offered on the website, filtered by a specific domain (e.g., mathematics), please use this URL:-
+
+	http://localhost:8000/courses/?domain=mathematics
+
+
+3. 	To view information about a specific course (e.g., "Highlights of Calculus"), please use this URL:-
+
+	http://localhost:8000/courses/course_name/?course_name=Highlights of Calculus
+
+4.	To view information about a specific chapter within a course (e.g., "Gil Strang's Introduction to Calculus for Highlights for 
+	High School" within "Highlights of Calculus"), please use this URL:-
+
+	http://localhost:8000/courses/course_with_chapter/?course_name=Highlights of Calculus&chapter_name=Gil Strang's Introduction to Calculus for Highlights for High School
+	
+5.  To rate a specific chapter within a course (e.g., "Gil Strang's Introduction to Calculus for Highlights for High School" 
+	within "Highlights of Calculus") based on a numeric rating (e.g., 1-5), please use this URL:-
+
+	http://localhost:8000/courses/rate_chapter/?course_name=Highlights of Calculus&chapter_name=Gil Strang's Introduction to Calculus for Highlights for High School&rating=1

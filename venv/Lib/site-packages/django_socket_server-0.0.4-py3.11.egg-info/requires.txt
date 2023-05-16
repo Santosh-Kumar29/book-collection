@@ -1,0 +1,4 @@
+Django>=1.6.1
+wheel==0.23.0
+autobahn
+twisted
